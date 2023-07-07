@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="home.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <div class="logo">real Time Polling</div>
+    </header>
+    <section class="main">
+      <div class="login">
+        <h2>Log In</h2>
+        <form class="signInForm" id="signInForm">
+          <div class="inputBox">
+            <input
+              type="text"
+              placeholder="abc@gmail.com"
+              class="signInEmail"
+              id="signInEmail"
+              required
+            />
+          </div>
+          <div class="inputBox">
+            <input
+              type="password"
+              placeholder="Password"
+              class="signInPassword"
+              id="signInPassword"
+              minlength="6"
+              required
+            />
+          </div>
+          <div class="inputBox">
+            <input type="submit" value="signIn" id="btn" />
+          </div>
+        </form>
+        <div class="group">
+          <p>Not Register?</p>
+          <a href="/index.html">Sign Up</a>
+        </div>
+      </div>
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script type="module" src="./login.js"></script>
+  </body>
+</html>
