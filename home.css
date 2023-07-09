@@ -1,9 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;600&display=swap");
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Noto Sans", sans-serif;
 }
 header {
   width: 100%;
@@ -28,9 +30,6 @@ header .logo i {
   height: 0.9em;
   align-self: flex-end;
 }
-header .elements {
-  /* width: 3em; */
-}
 header .elements .user {
   width: 3em;
   height: 3em;
@@ -45,7 +44,76 @@ header .elements .user i {
   font-size: 2.2em;
   color: blue;
 }
-.option {
+.createPollButton {
+  width: 13em;
+  border: 2px solid #f2c94c;
+  background: white;
+  font-size: 1.2rem;
+  padding: 1em 1em 1em 0em;
+  margin: 2em 2em 2em 0em;
+  cursor: pointer;
+}
+
+.pollDataFormDiv {
+  position: absolute;
+  top: 12%;
+  left: 40%;
+  /* width: 25em; */
+  border: 1px solid brown;
+  background: rgb(248, 34, 195);
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.281);
+  border-radius: 10px;
+  padding: 0.6em 0em;
+}
+.pollDataForm {
   display: flex;
   flex-direction: column;
+  align-items: center;
+}
+.question {
+  width: 18em;
+  padding: 0.5em;
+  margin: 0.5em;
+  border-radius: 5px;
+  font-size: 1.3rem;
+}
+.option {
+  width: 18em;
+  padding: 0.5em;
+  margin: 0.5em;
+  border-radius: 5px;
+  font-size: 1.3rem;
+}
+.submitBtn {
+  width: 10em;
+  font-size: 1rem;
+  padding: 0.4em;
+}
+.pollCreateSection {
+  padding: 1em;
+  background-color: blueviolet;
+}
+.pollDiv {
+  width: 30em;
+  height: auto;
+  background-color: whitesmoke;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.281);
+  border-radius: 10px;
+  padding: 1em;
+  margin: 1em;
+}
+.pollQuestionDiv {
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+.pollOption {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.3rem;
+  border: 2px solid sandybrown;
+  padding: 0.7em;
+  margin: 0.5em;
+  border-radius: 8px;
+  text-transform: capitalize;
+  cursor: pointer;
 }
